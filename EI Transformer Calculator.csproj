@@ -26,5 +26,12 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  
+  <ItemGroup>  
+    <Resource Include="GOTHIC.ttf" />  
+    <Resource Include="GOTHICB.ttf" />  
+    <Resource Include="GOTHICBI.ttf" /> 
+    <Resource Include="GOTHICI.ttf" />  
+  </ItemGroup>  
 
 </Project>
