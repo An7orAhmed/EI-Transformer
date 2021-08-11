@@ -28,7 +28,7 @@ namespace EI_Transformer_Calculator {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.Width = new System.Windows.Forms.TextBox();
+            this.CWidth = new System.Windows.Forms.TextBox();
             this.WidthEnable = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -38,7 +38,7 @@ namespace EI_Transformer_Calculator {
             this.label2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.Height = new System.Windows.Forms.TextBox();
+            this.CHeight = new System.Windows.Forms.TextBox();
             this.HeightEnable = new System.Windows.Forms.CheckBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -107,7 +107,7 @@ namespace EI_Transformer_Calculator {
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.Width);
+            this.panel1.Controls.Add(this.CWidth);
             this.panel1.Controls.Add(this.WidthEnable);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(16, 24);
@@ -125,14 +125,14 @@ namespace EI_Transformer_Calculator {
             this.label4.TabIndex = 4;
             this.label4.Text = "in.";
             // 
-            // Width
+            // CWidth
             // 
-            this.Width.Location = new System.Drawing.Point(38, 26);
-            this.Width.Name = "Width";
-            this.Width.Size = new System.Drawing.Size(84, 27);
-            this.Width.TabIndex = 3;
-            this.Width.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Width.TextChanged += new System.EventHandler(this.Width_TextChanged);
+            this.CWidth.Location = new System.Drawing.Point(38, 26);
+            this.CWidth.Name = "CWidth";
+            this.CWidth.Size = new System.Drawing.Size(84, 27);
+            this.CWidth.TabIndex = 3;
+            this.CWidth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CWidth.TextChanged += new System.EventHandler(this.Width_TextChanged);
             // 
             // WidthEnable
             // 
@@ -217,7 +217,7 @@ namespace EI_Transformer_Calculator {
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.Height);
+            this.panel3.Controls.Add(this.CHeight);
             this.panel3.Controls.Add(this.HeightEnable);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(204, 24);
@@ -235,14 +235,14 @@ namespace EI_Transformer_Calculator {
             this.label5.TabIndex = 5;
             this.label5.Text = "in.";
             // 
-            // Height
+            // CHeight
             // 
-            this.Height.Location = new System.Drawing.Point(41, 26);
-            this.Height.Name = "Height";
-            this.Height.Size = new System.Drawing.Size(81, 27);
-            this.Height.TabIndex = 5;
-            this.Height.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.Height.TextChanged += new System.EventHandler(this.Height_TextChanged);
+            this.CHeight.Location = new System.Drawing.Point(41, 26);
+            this.CHeight.Name = "CHeight";
+            this.CHeight.Size = new System.Drawing.Size(81, 27);
+            this.CHeight.TabIndex = 5;
+            this.CHeight.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.CHeight.TextChanged += new System.EventHandler(this.Height_TextChanged);
             // 
             // HeightEnable
             // 
@@ -751,9 +751,9 @@ namespace EI_Transformer_Calculator {
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.CheckBox HeightEnable;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox Width;
+        private System.Windows.Forms.TextBox CWidth;
         private System.Windows.Forms.TextBox Power;
-        private System.Windows.Forms.TextBox Height;
+        private System.Windows.Forms.TextBox CHeight;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

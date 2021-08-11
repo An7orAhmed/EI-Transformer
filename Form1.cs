@@ -28,10 +28,10 @@ namespace EI_Transformer_Calculator {
             if (PowerEnable.Checked && HeightEnable.Checked && WidthEnable.Checked) {
                 MessageBox.Show("Already two perams are selected.");
                 WidthEnable.Checked = false;
-                Width.Enabled = false;
+                CWidth.Enabled = false;
             }
-            else Width.Enabled = true;
-            if (!WidthEnable.Checked) Width.Enabled = false;
+            else CWidth.Enabled = true;
+            if (!WidthEnable.Checked) CWidth.Enabled = false;
         }
 
         private void PowerEnable_CheckedChanged(object sender, EventArgs e) {
@@ -48,29 +48,29 @@ namespace EI_Transformer_Calculator {
             if (PowerEnable.Checked && HeightEnable.Checked && WidthEnable.Checked) {
                 MessageBox.Show("Already two perams are selected.");
                 HeightEnable.Checked = false;
-                Height.Enabled = false;
+                CHeight.Enabled = false;
             }
-            else Height.Enabled = true;
-            if(!HeightEnable.Checked) Height.Enabled = false;
+            else CHeight.Enabled = true;
+            if(!HeightEnable.Checked) CHeight.Enabled = false;
         }
 
         private void Width_TextChanged(object sender, EventArgs e) {
-            bool vaild = float.TryParse(Width.Text, out float width);
+            bool vaild = float.TryParse(CWidth.Text, out float width);
             if (vaild == false) return;
             
-            if (Height.Enabled == false) {
+            if (CHeight.Enabled == false) {
                 vaild = float.TryParse(Power.Text, out float power);
                 if (vaild == false) return;
-                Height.Text = (Math.Sqrt(power) / (5.58 * width)).ToString("0.00");
+                CHeight.Text = (Math.Sqrt(power) / (5.58 * width)).ToString("0.00");
             }
 
             else if (Power.Enabled == false) {
-                vaild = float.TryParse(Height.Text, out float height);
+                vaild = float.TryParse(CHeight.Text, out float height);
                 if (vaild == false) return;
                 var p = Math.Pow(width * height * 5.58, 2);
                 Power.Text = p.ToString("0.00");
             }
-            var fha = float.Parse(Height.Text) * width * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
+            var fha = float.Parse(CHeight.Text) * width * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
             TurnVolt.Text = (22522522.5225 / fha).ToString("0.00");
         }
 
@@ -78,45 +78,45 @@ namespace EI_Transformer_Calculator {
             bool vaild = float.TryParse(Power.Text, out float power);
             if (vaild == false) return;
             
-            if (Height.Enabled == false) {
-                vaild = float.TryParse(Width.Text, out float width);
+            if (CHeight.Enabled == false) {
+                vaild = float.TryParse(CWidth.Text, out float width);
                 if (vaild == false) return;
-                Height.Text = (Math.Sqrt(power) / (5.58 * width)).ToString("0.00");
+                CHeight.Text = (Math.Sqrt(power) / (5.58 * width)).ToString("0.00");
             }
 
-            else if (Width.Enabled == false) {
-                vaild = float.TryParse(Height.Text, out float height);
+            else if (CWidth.Enabled == false) {
+                vaild = float.TryParse(CHeight.Text, out float height);
                 if (vaild == false) return;
-                Width.Text = (Math.Sqrt(power) / (5.58 * height)).ToString("0.00");
+                CWidth.Text = (Math.Sqrt(power) / (5.58 * height)).ToString("0.00");
             }
-            var fha = float.Parse(Height.Text) * float.Parse(Width.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
+            var fha = float.Parse(CHeight.Text) * float.Parse(CWidth.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
             TurnVolt.Text = (22522522.5225 / fha).ToString("0.00");
         }
 
         private void Height_TextChanged(object sender, EventArgs e) {
-            bool vaild = float.TryParse(Height.Text, out float height);
+            bool vaild = float.TryParse(CHeight.Text, out float height);
             if (vaild == false) return;
            
-            if (Width.Enabled == false) {
+            if (CWidth.Enabled == false) {
                 vaild = float.TryParse(Power.Text, out float power);
                 if (vaild == false) return;
-                Width.Text = (Math.Sqrt(power) / (5.58 * height)).ToString("0.00");
+                CWidth.Text = (Math.Sqrt(power) / (5.58 * height)).ToString("0.00");
             }
 
             else if(Power.Enabled == false) {
-                vaild = float.TryParse(Width.Text, out float width);
+                vaild = float.TryParse(CWidth.Text, out float width);
                 if (vaild == false) return;
                 var p = Math.Pow(width * height * 5.58, 2);
                 Power.Text = p.ToString("0.00");
             }
-            var fha = float.Parse(Height.Text) * float.Parse(Width.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
+            var fha = float.Parse(CHeight.Text) * float.Parse(CWidth.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
             TurnVolt.Text = (22522522.5225 / fha).ToString("0.00");
         }
 
         private void Frequency_TextChanged(object sender, EventArgs e) {
             if (int.TryParse(Frequency.Text, out int freq)) {
                 Frequency.Text = freq.ToString();
-                var fha = float.Parse(Height.Text) * float.Parse(Width.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
+                var fha = float.Parse(CHeight.Text) * float.Parse(CWidth.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
                 TurnVolt.Text = (22522522.5225 / fha).ToString("0.00");
             }
             else Frequency.Text = "";
@@ -125,7 +125,7 @@ namespace EI_Transformer_Calculator {
         private void FluxLines_TextChanged(object sender, EventArgs e) {
             if (int.TryParse(FluxLines.Text, out int flux)) {
                 FluxLines.Text = flux.ToString();
-                var fha = float.Parse(Height.Text) * float.Parse(Width.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
+                var fha = float.Parse(CHeight.Text) * float.Parse(CWidth.Text) * int.Parse(Frequency.Text) * int.Parse(FluxLines.Text);
                 TurnVolt.Text = (22522522.5225 / fha).ToString("0.00");
             }
             else FluxLines.Text = "";
