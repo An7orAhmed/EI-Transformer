@@ -165,17 +165,26 @@ namespace EI_Transformer_Calculator {
             valid = float.TryParse(Power.Text, out float power);
             if (valid == false) return;
 
+            double N2 = turn * volt;
             SvoltList.Items.Add(Svolt.Text);
-            SturnList.Items.Add((turn * volt).ToString("0.00"));
+            SturnList.Items.Add((N2).ToString("0.00"));
             SampList.Items.Add((power / volt).ToString("0.00"));
+
+            if (PturnList.Items.Count == 0) return;
+            double N1 = double.Parse(PturnList.Items[SturnList.Items.Count - 1].ToString());
+            ShenryList.Items.Add((Math.Pow(N2, 2) / Math.Pow(N1, 2) * 1000).ToString("0.00mH"));
         }
 
         private void SRemove_Click(object sender, EventArgs e) {
             int selected = SvoltList.SelectedIndex;
             if (selected != -1) {
-                SvoltList.Items.RemoveAt(selected);
-                SturnList.Items.RemoveAt(selected);
-                SampList.Items.RemoveAt(selected);
+                try {
+                    SvoltList.Items.RemoveAt(selected);
+                    SturnList.Items.RemoveAt(selected);
+                    SampList.Items.RemoveAt(selected);
+                    ShenryList.Items.RemoveAt(selected);
+                }
+                catch { }
             }
         }
 

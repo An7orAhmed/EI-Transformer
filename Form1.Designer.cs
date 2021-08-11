@@ -67,6 +67,8 @@ namespace EI_Transformer_Calculator {
             this.PvoltList = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.label21 = new System.Windows.Forms.Label();
+            this.ShenryList = new System.Windows.Forms.ListBox();
             this.label16 = new System.Windows.Forms.Label();
             this.SampList = new System.Windows.Forms.ListBox();
             this.SRemove = new System.Windows.Forms.Button();
@@ -431,19 +433,19 @@ namespace EI_Transformer_Calculator {
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(268, 15);
+            this.label15.Location = new System.Drawing.Point(275, 15);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(86, 21);
+            this.label15.Size = new System.Drawing.Size(80, 21);
             this.label15.TabIndex = 10;
-            this.label15.Text = "Amps List:";
+            this.label15.Text = "Amp List:";
             // 
             // PampList
             // 
             this.PampList.FormattingEnabled = true;
             this.PampList.ItemHeight = 21;
-            this.PampList.Location = new System.Drawing.Point(268, 42);
+            this.PampList.Location = new System.Drawing.Point(275, 42);
             this.PampList.Name = "PampList";
-            this.PampList.Size = new System.Drawing.Size(115, 130);
+            this.PampList.Size = new System.Drawing.Size(108, 130);
             this.PampList.TabIndex = 9;
             this.PampList.SelectedIndexChanged += new System.EventHandler(this.PampList_SelectedIndexChanged);
             // 
@@ -502,28 +504,28 @@ namespace EI_Transformer_Calculator {
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(145, 15);
+            this.label13.Location = new System.Drawing.Point(150, 15);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 21);
+            this.label13.Size = new System.Drawing.Size(74, 21);
             this.label13.TabIndex = 4;
-            this.label13.Text = "Turns List:";
+            this.label13.Text = "Turn List:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(25, 15);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(78, 21);
+            this.label12.Size = new System.Drawing.Size(72, 21);
             this.label12.TabIndex = 3;
-            this.label12.Text = "Volts List:";
+            this.label12.Text = "Volt List:";
             // 
             // PturnList
             // 
             this.PturnList.FormattingEnabled = true;
             this.PturnList.ItemHeight = 21;
-            this.PturnList.Location = new System.Drawing.Point(145, 42);
+            this.PturnList.Location = new System.Drawing.Point(150, 42);
             this.PturnList.Name = "PturnList";
-            this.PturnList.Size = new System.Drawing.Size(115, 130);
+            this.PturnList.Size = new System.Drawing.Size(108, 130);
             this.PturnList.TabIndex = 2;
             // 
             // PvoltList
@@ -532,7 +534,7 @@ namespace EI_Transformer_Calculator {
             this.PvoltList.ItemHeight = 21;
             this.PvoltList.Location = new System.Drawing.Point(25, 42);
             this.PvoltList.Name = "PvoltList";
-            this.PvoltList.Size = new System.Drawing.Size(113, 130);
+            this.PvoltList.Size = new System.Drawing.Size(108, 130);
             this.PvoltList.TabIndex = 1;
             // 
             // label7
@@ -545,13 +547,15 @@ namespace EI_Transformer_Calculator {
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(408, 32);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Primary Coil";
+            this.label7.Text = "Primary Coil [Induction = 1Henry]";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel8.Controls.Add(this.label21);
+            this.panel8.Controls.Add(this.ShenryList);
             this.panel8.Controls.Add(this.label16);
             this.panel8.Controls.Add(this.SampList);
             this.panel8.Controls.Add(this.SRemove);
@@ -570,22 +574,40 @@ namespace EI_Transformer_Calculator {
             this.panel8.Size = new System.Drawing.Size(408, 269);
             this.panel8.TabIndex = 11;
             // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(304, 15);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(89, 21);
+            this.label21.TabIndex = 12;
+            this.label21.Text = "Henry List: ";
+            // 
+            // ShenryList
+            // 
+            this.ShenryList.FormattingEnabled = true;
+            this.ShenryList.ItemHeight = 21;
+            this.ShenryList.Location = new System.Drawing.Point(304, 42);
+            this.ShenryList.Name = "ShenryList";
+            this.ShenryList.Size = new System.Drawing.Size(78, 130);
+            this.ShenryList.TabIndex = 11;
+            // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(268, 15);
+            this.label16.Location = new System.Drawing.Point(209, 15);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(86, 21);
+            this.label16.Size = new System.Drawing.Size(80, 21);
             this.label16.TabIndex = 10;
-            this.label16.Text = "Amps List:";
+            this.label16.Text = "Amp List:";
             // 
             // SampList
             // 
             this.SampList.FormattingEnabled = true;
             this.SampList.ItemHeight = 21;
-            this.SampList.Location = new System.Drawing.Point(268, 42);
+            this.SampList.Location = new System.Drawing.Point(211, 42);
             this.SampList.Name = "SampList";
-            this.SampList.Size = new System.Drawing.Size(115, 130);
+            this.SampList.Size = new System.Drawing.Size(78, 130);
             this.SampList.TabIndex = 9;
             this.SampList.SelectedIndexChanged += new System.EventHandler(this.SampList_SelectedIndexChanged);
             // 
@@ -644,28 +666,28 @@ namespace EI_Transformer_Calculator {
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(145, 15);
+            this.label18.Location = new System.Drawing.Point(118, 15);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(80, 21);
+            this.label18.Size = new System.Drawing.Size(74, 21);
             this.label18.TabIndex = 4;
-            this.label18.Text = "Turns List:";
+            this.label18.Text = "Turn List:";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(25, 15);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(78, 21);
+            this.label19.Size = new System.Drawing.Size(72, 21);
             this.label19.TabIndex = 3;
-            this.label19.Text = "Volts List:";
+            this.label19.Text = "Volt List:";
             // 
             // SturnList
             // 
             this.SturnList.FormattingEnabled = true;
             this.SturnList.ItemHeight = 21;
-            this.SturnList.Location = new System.Drawing.Point(145, 42);
+            this.SturnList.Location = new System.Drawing.Point(118, 42);
             this.SturnList.Name = "SturnList";
-            this.SturnList.Size = new System.Drawing.Size(115, 130);
+            this.SturnList.Size = new System.Drawing.Size(78, 130);
             this.SturnList.TabIndex = 2;
             // 
             // SvoltList
@@ -674,7 +696,7 @@ namespace EI_Transformer_Calculator {
             this.SvoltList.ItemHeight = 21;
             this.SvoltList.Location = new System.Drawing.Point(25, 42);
             this.SvoltList.Name = "SvoltList";
-            this.SvoltList.Size = new System.Drawing.Size(113, 130);
+            this.SvoltList.Size = new System.Drawing.Size(78, 130);
             this.SvoltList.TabIndex = 1;
             // 
             // label20
@@ -795,6 +817,8 @@ namespace EI_Transformer_Calculator {
         private System.Windows.Forms.ListBox SturnList;
         private System.Windows.Forms.ListBox SvoltList;
         private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.ListBox ShenryList;
     }
 }
 
