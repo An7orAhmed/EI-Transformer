@@ -1,0 +1,17 @@
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\bin\Debug\netcoreapp3.1\EI Transformer Calculator.exe
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\bin\Debug\netcoreapp3.1\EI Transformer Calculator.deps.json
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\bin\Debug\netcoreapp3.1\EI Transformer Calculator.runtimeconfig.json
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\bin\Debug\netcoreapp3.1\EI Transformer Calculator.runtimeconfig.dev.json
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\bin\Debug\netcoreapp3.1\EI Transformer Calculator.dll
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\bin\Debug\netcoreapp3.1\EI Transformer Calculator.pdb
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.csproj.AssemblyReference.cache
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI_Transformer_Calculator.Form1.resources
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI_Transformer_Calculator.Properties.Resources.resources
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.csproj.GenerateResource.cache
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.AssemblyInfoInputs.cache
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.AssemblyInfo.cs
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.csproj.CoreCompileInputs.cache
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.dll
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.pdb
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.genruntimeconfig.cache
+E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.g.resources
