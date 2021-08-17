@@ -14,9 +14,26 @@ namespace EI_Transformer_Calculator {
     public partial class Form1 : Form {
         public Form1() {
             InitializeComponent();
+
+            this.Font = SystemFonts.IconTitleFont;
+            SystemEvents.UserPreferenceChanged += new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
+            this.FormClosing += new FormClosingEventHandler(Form1_FormClosing);
         }
 
         private double[] swgTable = {0, 142, 120, 100, 84, 70, 58, 48, 40, 32, 26, 22, 18, 14, 10, 8, 6, 4, 3.6, 2.6, 2, 1.6, 1.2, 1, 0.8, 0.6, 0.5, 0.42, 0.34, 0.24, 0.2, 0.18, 0.14, 0.12, 0.1, 0.08};
+
+        void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+        {
+            if (e.Category == UserPreferenceCategory.Window)
+            {
+                this.Font = SystemFonts.IconTitleFont;
+            }
+        }
+
+        void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            SystemEvents.UserPreferenceChanged -= new UserPreferenceChangedEventHandler(SystemEvents_UserPreferenceChanged);
+        }
 
         private void Form1_Load(object sender, EventArgs e) {
             CheckForIllegalCrossThreadCalls = false;
