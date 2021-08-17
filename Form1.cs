@@ -170,8 +170,8 @@ namespace EI_Transformer_Calculator {
             SturnList.Items.Add((N2).ToString("0.00"));
             SampList.Items.Add((power / volt).ToString("0.00"));
 
-            if (PturnList.Items.Count == 0) return;
-            double N1 = double.Parse(PturnList.Items[SturnList.Items.Count - 1].ToString());
+            if (PturnList.Items.Count == 0) return;       
+            double N1 = double.Parse(PturnList.Items[PturnList.Items.Count - 1].ToString());
             ShenryList.Items.Add((Math.Pow(N2, 2) / Math.Pow(N1, 2) * 1000).ToString("0.00mH"));
         }
 
