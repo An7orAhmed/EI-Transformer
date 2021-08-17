@@ -14,4 +14,3 @@ E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\De
 E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.dll
 E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.pdb
 E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.genruntimeconfig.cache
-E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\obj\Debug\netcoreapp3.1\EI Transformer Calculator.csproj.AssemblyReference.cache
