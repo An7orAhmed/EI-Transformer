@@ -12,6 +12,10 @@
     <Copyright>Kitsware Technology</Copyright>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>E:\GDriveKitsware\Projects\Software Development\EI Transformer Calculator\EI Transformer Calculator.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
     <Compile Update="Properties\Resources.Designer.cs">
       <DesignTime>True</DesignTime>
