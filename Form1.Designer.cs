@@ -577,7 +577,7 @@ namespace EI_Transformer_Calculator {
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(304, 15);
+            this.label21.Location = new System.Drawing.Point(293, 15);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(89, 21);
             this.label21.TabIndex = 12;
@@ -587,15 +587,15 @@ namespace EI_Transformer_Calculator {
             // 
             this.ShenryList.FormattingEnabled = true;
             this.ShenryList.ItemHeight = 21;
-            this.ShenryList.Location = new System.Drawing.Point(304, 42);
+            this.ShenryList.Location = new System.Drawing.Point(295, 42);
             this.ShenryList.Name = "ShenryList";
-            this.ShenryList.Size = new System.Drawing.Size(78, 130);
+            this.ShenryList.Size = new System.Drawing.Size(87, 130);
             this.ShenryList.TabIndex = 11;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(209, 15);
+            this.label16.Location = new System.Drawing.Point(203, 15);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(80, 21);
             this.label16.TabIndex = 10;
@@ -605,7 +605,7 @@ namespace EI_Transformer_Calculator {
             // 
             this.SampList.FormattingEnabled = true;
             this.SampList.ItemHeight = 21;
-            this.SampList.Location = new System.Drawing.Point(211, 42);
+            this.SampList.Location = new System.Drawing.Point(205, 42);
             this.SampList.Name = "SampList";
             this.SampList.Size = new System.Drawing.Size(78, 130);
             this.SampList.TabIndex = 9;
@@ -666,7 +666,7 @@ namespace EI_Transformer_Calculator {
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(118, 15);
+            this.label18.Location = new System.Drawing.Point(115, 15);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(74, 21);
             this.label18.TabIndex = 4;
@@ -685,7 +685,7 @@ namespace EI_Transformer_Calculator {
             // 
             this.SturnList.FormattingEnabled = true;
             this.SturnList.ItemHeight = 21;
-            this.SturnList.Location = new System.Drawing.Point(118, 42);
+            this.SturnList.Location = new System.Drawing.Point(115, 42);
             this.SturnList.Name = "SturnList";
             this.SturnList.Size = new System.Drawing.Size(78, 130);
             this.SturnList.TabIndex = 2;
