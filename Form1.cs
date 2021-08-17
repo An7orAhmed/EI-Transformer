@@ -172,7 +172,12 @@ namespace EI_Transformer_Calculator {
 
             if (PturnList.Items.Count == 0) return;       
             double N1 = double.Parse(PturnList.Items[PturnList.Items.Count - 1].ToString());
-            ShenryList.Items.Add((Math.Pow(N2, 2) / Math.Pow(N1, 2) * 1000).ToString("0.00mH"));
+            double L2 = Math.Pow(N2, 2) / Math.Pow(N1, 2) * 1000;
+            if (L2 >= 1000) {
+                L2 /= 1000;
+                ShenryList.Items.Add(L2.ToString("0.00H"));
+            }
+            else ShenryList.Items.Add(L2.ToString("0.00mH"));
         }
 
         private void SRemove_Click(object sender, EventArgs e) {
